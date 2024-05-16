@@ -121,8 +121,4 @@ const Header = () => {
   );
 };
 
-function New() {
-  console.log("Hi");
-}
-
 export default Header;
