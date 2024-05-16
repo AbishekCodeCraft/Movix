@@ -68,11 +68,12 @@ const Header = () => {
     } else {
       navigate("/explore/tv");
     }
+    setMobileMenu(false);
   };
 
   return (
     <>
-      <header className={`header ${mobileMenu ? "mobileView" : ""}${show}`}>
+      <header className={`header ${mobileMenu ? "mobileView" : ""} ${show}`}>
         <ContentWrapper>
           <div className="logo" onClick={() => navigate("/")}>
             <img src={logo} alt="" />
@@ -119,5 +120,9 @@ const Header = () => {
     </>
   );
 };
+
+function New() {
+  console.log("Hi");
+}
 
 export default Header;
